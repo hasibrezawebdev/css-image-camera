@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#2695fc, #004cbd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#camera {
+    position: relative;
+    bottom: 4vw;
+}
+
+.cam-body {
+    width: 40vw;
+    height: 25vw;
+    overflow: visible;
+}
+
+.cam-switch-red {
+    width: 3.5vw;
+    height: 2vw;
+    background: #fc790f;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    position: relative;
+    top: 4vw;
+    left: 4vw;
+    
+}
+
+.cam-flash-border {
+    width: 8vw;
+    height: 4vw;
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    position: relative;
+    left: 16vw;
+}
+
+.cam-flash-light {
+    width: 4vw;
+    height: 3vw;
+    background: #b6b6b6;
+    border-radius: 0.5vw;
+}
+
+.cam-rainbow {
+    width: 20vw;
+    height: 4vw;
+    background: linear-gradient(#d400ff, 
+                                #2600ff, 
+                                #00b7ff, 
+                                #00ff00, 
+                                #fbff00, 
+                                #ffbb00, 
+                                #ff0000);
+    position: relative;
+    left: 20vw;
+    bottom: 14.5vw;
+    z-index: 1;
+}
+
+.cam-body-white {
+    width: 40vw;
+    height: 25vw;
+    background: #ffffff;
+    box-shadow: 7px 7px 5px #00000044;
+    border-radius: 3vw;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.cam-body-white .sensor {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: #252525;
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+}
+
+.cam-lens {
+    width: 16.5vw;
+    height: 16.5vw;
+    position: static;
+    z-index: 2;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.cam-lens-glass {
+    width: 15vw;
+    height: 15vw;
+    background: #252525;
+    border: 0.5vw solid #474747;
+    border-radius: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2vw 0.2vw 0.3vw #0000009f;
+}
+
+
+.cam-lens-glass .first-circle {
+    width: 85%;
+    height: 85%;
+    background: #4d4d4d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cam-lens-glass .second-circle {
+    width: 90%;
+    height: 90%;
+    background: #838383;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cam-lens-glass .third-circle {
+    width: 60%;
+    height: 60%;
+    background: #252525;
+    border-radius: 50%;
+}
+
+.cam-lens-glass .last-small-circle {
+    width: 25%;
+    height: 25%;
+    background: #ffffff4d;
+    border-radius: 50%;
+    position: relative;
+    top: 55%;
+    left: 60%;
+}
+
+.reflection {
+    width: 15vw;
+    height: 7.5vw;
+    border-top-left-radius: 15vw;
+    border-top-right-radius: 15vw;
+    background: #ffffff4d;
+    position: relative;
+    bottom: 94%;
+    left: 3%;
+    transform: rotate(-50deg);
+    transform-origin: 50% 100%;
+}
